@@ -18,6 +18,13 @@ body {
     background: darkcyan;
 }
 
+.menu li{
+    list-style-type: none;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000;
+    float: left;
+}
 .nav{
     width: 200px;
     height: 300px;
@@ -27,6 +34,18 @@ body {
 .main{
     margin-left: 200px;
 }
+.main .block{
+    width: 30%;
+    height: 300px;
+    outline: 1px solid black;
+    float: left;
+    margin: 1% 1.5%;
+}
+
+.clearfix{
+    clear: both;
+}
+
 .clr{
     height: 200px;
 }
@@ -35,4 +54,19 @@ body {
     background-color: #ccc;
     width: 1200px;
     margin: -200px auto 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .header{
+        background: darkgreen;
+    }
+}
+@media screen and (max-width: 600px){
+    .main .block{
+        width: 45%;
+        margin: 2% 2.5%;
+    }
+    .menu li{
+        float: none;
+    }
 }
